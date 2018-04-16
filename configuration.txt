@@ -1,0 +1,39 @@
+[path]
+
+abs_path = /home/priyanka/Documents/autonomous_systems/master_thesis/code/interactive_detection
+images_path = /dataset/
+train_annotation_file = /dataset/via_region_data_train.csv
+test_annotation_file = /dataset/via_region_data_test.csv
+forest_obj_file = forest.obj
+
+[patch]
+
+patch_width = 16
+patch_height = 16
+num_patches = 70
+ch = 3
+
+[tree]
+
+num_files_train = 8
+num_trees = 2
+max_depth = 3
+num_threshold = 5
+min_sample_leaf = 2
+min_pfg_vote = 0
+max_votes_leaf= 200
+
+[training]
+
+inf_margin = 0.0000001
+gain_margin = 0.0000001
+num_tests = 4 
+epsilon = 0.00000001
+gt_bbs_filename = gt_bbs.obj
+
+[testing]
+
+max_detections = 8
+test_param_file_name = test_config.txt
+clear_area_h = 120
+clear_area_w = 120
