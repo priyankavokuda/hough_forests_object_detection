@@ -14,7 +14,7 @@ Run trainDetec.py
 
 ## Results
 
-![](https://github.com/priyankavokuda/image-de-noising/blob/master/image/example_output.png)
+![](https://github.com/priyankavokuda/hough_forests_object_detection/blob/master/images/example_output.png)
 
 The code is implemented from work [J.Gall2013]
 
